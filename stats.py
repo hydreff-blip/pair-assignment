@@ -1,5 +1,3 @@
-seq = "ATCAGATCGATCGATCGATCGATCGT"
-
 def stats(seq):
     #collecting statistics about the sequence
     length = len(seq)
@@ -22,5 +20,3 @@ def stats(seq):
         print(f"Start codon found - position {AUG_position}.")
     else:
         print("Start codon not found.")
-
-stats(seq)
