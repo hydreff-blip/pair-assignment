@@ -7,4 +7,4 @@ Functions of our FASTA analysis tool:
 3. Stats (GC content, number of Ns, length, start codon position) (Ivan)
 4. Annealing temperature (Tetiana)
 5. Primer generation (Tetiana)
-
+6. Check (Daryna)
