@@ -11,9 +11,9 @@ def stats(seq):
     N = seq.count("N")
     N_percent = round(N/length*100, 2)
     if N_percent > 30:
-        print(f"Amount of undefined nucleotides: {N}, which equals to {N_percent}% - low quality.")
+        print(f"Amount of undefined nucleotides: {N} ({N_percent}%).")
     else:
-        print(f"Amount of undefined nucleotides: {N}, which equals to {N_percent}% - high quality, congratulations!")
+        print(f"Amount of undefined nucleotides: {N} ({N_percent}%).")
 
     #finding the start codon
     ATG_position = seq.find("ATG")
