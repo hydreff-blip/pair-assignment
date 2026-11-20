@@ -25,6 +25,7 @@ with open("data/ms2_phage.fasta") as file:
     seq_check(dna)
     stats(dna)
     print (f"\n======= mRNA =======\n{transcribe(dna)}")
+    print (f"\n======= Protein =======\n{translate(dna)}\n")
     primer_design(dna)
     restriction_sites(dna)
     looking_for_sites(dna)
