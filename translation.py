@@ -1,16 +1,16 @@
-def translate(dna):
-    length = len(dna)
-    start_codon = dna.find("ATG")
-    dna1 = []
+def translate(seq):
+    length = len(seq)
+    start_codon = seq.find("ATG")
+    seq1 = []
     for i in range (start_codon, length-(length%3), 3):
-        dna1.append(dna[i:i+3])
+        seq1.append(seq[i:i+3])
 
     import pandas as pd
 
     df = pd.read_csv("codons.csv")
 
     prot = []
-    for i in dna1:
+    for i in seq1:
         if i == "TGA" or i == "TAA" or i == "TAG":
             break
         else:
@@ -19,4 +19,4 @@ def translate(dna):
                     prot.append(df["AA"].loc[df.index[j]])
 
     prot1 = "-".join(prot)
-    print(prot1)
+    return(prot1)

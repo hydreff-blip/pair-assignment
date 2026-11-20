@@ -1,6 +1,7 @@
 from transcription import transcribe
 from sequence_check import seq_check
 from stats import stats
+from translation import translate
 
 # opening a file
 #file_name = input("Enter path to a .fasta file: ")
@@ -22,5 +23,4 @@ with open("data/ms2_phage.fasta") as file:
     seq_check(dna)
     stats(dna)
     print (f"\n======= mRNA =======\n{transcribe(dna)}")
-
-
+    print(f"\n======= Protein =======\n{translate(dna)}")
