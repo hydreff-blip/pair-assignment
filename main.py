@@ -1,6 +1,8 @@
 from transcription import transcribe
 from sequence_check import seq_check
 from stats import stats
+from pcr import primer_design
+from restriction import restrictases, sites, restriction_sites, looking_for_sites
 from translation import translate
 
 # opening a file
@@ -23,4 +25,8 @@ with open("data/ms2_phage.fasta") as file:
     seq_check(dna)
     stats(dna)
     print (f"\n======= mRNA =======\n{transcribe(dna)}")
-    print(f"\n======= Protein =======\n{translate(dna)}")
+    primer_design(dna)
+    restriction_sites(dna)
+    looking_for_sites(dna)
+
+

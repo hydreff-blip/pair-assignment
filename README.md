@@ -5,6 +5,6 @@ Functions of our FASTA analysis tool:
 1. Transcription (Daryna)
 2. Translation (Ivan)
 3. Stats (GC content, number of Ns, length, start codon position) (Ivan)
-4. Annealing temperature (Tetiana)
+4. Restriction analysis (identifying restriction sites) (Tetiana)
 5. Primer generation (Tetiana)
 6. Check (Daryna)
