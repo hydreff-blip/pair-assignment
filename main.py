@@ -3,6 +3,7 @@ from sequence_check import seq_check
 from stats import stats
 from pcr import primer_design
 from restriction import restrictases, sites, restriction_sites, looking_for_sites
+from translation import translate
 
 # opening a file
 #file_name = input("Enter path to a .fasta file: ")
